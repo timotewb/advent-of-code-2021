@@ -12,10 +12,10 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y libpq-dev
 RUN sudo apt-get install -y gcc
 RUN sudo apt-get install -y htop
-RUN sudo apt-get install -y npm
-RUN sudo apt-get install -y nodejs
-RUN sudo npm install -g --unsafe-perm ijavascript
-RUN sudo ijsinstall --install=global
+# RUN sudo apt-get install -y npm
+# RUN sudo apt-get install -y nodejs
+# RUN sudo npm install -g --unsafe-perm ijavascript
+# RUN sudo ijsinstall --install=global
 
 RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
