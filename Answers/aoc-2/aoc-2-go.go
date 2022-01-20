@@ -12,10 +12,10 @@ func main() {
 	// Part 1
 	var hor_pos int = 0
 	var depth int = 0
-	var value int
 
 	for i := 0; i < len(input); i++ {
 		var command string = strings.Split(input[i], " ")[0]
+		var value int
 		value, err := strconv.Atoi(strings.Split(input[i], " ")[1])
 		_ = err
 
