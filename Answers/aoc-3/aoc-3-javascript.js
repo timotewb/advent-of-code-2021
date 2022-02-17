@@ -1,3 +1,5 @@
+// https://www.programiz.com/javascript/online-compiler/
+
 const _input = "00100,11110,10110,10111,10101,01111,00111,11100,10000,11001,00010,01010";
 const input = _input.split(',');
 
@@ -47,7 +49,14 @@ console.log('Epsilon Rate Binary: '+epsilon_rate_bin_str);
 console.log('Epsilon Rate Decimal: '+parseInt(epsilon_rate_bin_str,2));
 console.log('Power Consumption: '+parseInt(gamma_rate_bin_str,2)*parseInt(epsilon_rate_bin_str,2));
 
-
+// Part 1
+console.log(part1Array)
+part1Array.forEach(function(array, index0){
+    var one = array.filter(x => x==1).length;
+    var zero = array.filter(x => x==1).length;
+    // here! - oxygen generator rating 
+    }
+)
 
 
 
